@@ -53,10 +53,10 @@ county_choices=[
 ('Nairobi','047 Nairobi'),
 ]
 
-class UserRegisterForm(CustomUserCreationForm):    
+class UserRegisterForm(UserCreationForm):    
     location = forms.CharField(label='county', widget=forms.Select(choices=county_choices))
     email = forms.EmailField()
 
     class Meta:
-        model = CustomUser
+        model = User
         fields = ['username', 'email', 'password1', 'password2', 'location']
