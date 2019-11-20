@@ -8,7 +8,7 @@ able to customize it in the future if the need arises:
        class User(AbstractUser):
         pass
     
->Don’t forget to point AUTH_USER_MODEL to it in the **settings.py**. Do this before creating any migrations or running
+>Don’t forget to point **AUTH_USER_MODEL**  to it in the **settings.py**. Do this before creating any migrations or running
 >manage.py migrate for the first time.
 
     AUTH_USER_MODEL = 'myapp.MyUser'
