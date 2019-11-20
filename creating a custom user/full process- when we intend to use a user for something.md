@@ -22,7 +22,5 @@ able to customize it in the future if the need arises:
     
     admin.site.register(User, UserAdmin)
     
->Don’t forget to point AUTH_USER_MODEL to it. 
->Do this before creating any migrations or running manage.py migrate for the first time.
 
 https://docs.djangoproject.com/en/2.2/topics/auth/customizing/
