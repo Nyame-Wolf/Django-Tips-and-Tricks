@@ -1,0 +1,15 @@
+<!--Necessary so that users arent redirected to django-admin -->
+<!--If you see the logout page of the Django administration site instead of your
+own log out page, check the INSTALLED_APPS setting of your project and make
+sure that django.contrib.admin comes after the account application. Both templates
+are located in the same relative path, and the Django template loader will
+use the first one it finds.-->
+{% extends 'account/base.html' %}
+{% block content %}
+<h2>You are Logged out</h2>
+<div class="border-top pt-3">
+    <small class="text-muted">
+        <a href="{% url 'login' %}">Log in</a>
+    </small>
+</div>
+{% endblock content %}
