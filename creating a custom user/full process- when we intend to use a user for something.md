@@ -22,5 +22,4 @@ able to customize it in the future if the need arises:
     
     admin.site.register(User, UserAdmin)
     
-
-https://docs.djangoproject.com/en/2.2/topics/auth/customizing/
+https://docs.djangoproject.com/en/3.1/topics/auth/customizing/
